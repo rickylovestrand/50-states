@@ -5,8 +5,8 @@
         <p v-if="state.visited">You have visited this state</p>
         <p v-else>You have not visited this state yet</p>
 
-        <!-- todo map here -->
-        
+        <!-- leaflet map shown only if api call getOneState is sucessful -->
+        <!-- otherwise, it will not display correctly because of timing issues-->
         <div id="map-container" v-if="dataReady">
             <l-map ref="map" v-on:ready="onMapReady" v-bind:center="mapCenter" v-bind:zoom="state.zoom">
                 <l-tile-layer
@@ -61,7 +61,7 @@ export default {
         },
         setMapView(){
             if (this.mapReady && this.dataReady){
-                // todo - make sure map shows correct part of the world and zoom level
+                // make sure map shows correct part of the world and zoom level
                 this.$refs.map.leafletObject.setView(this.mapCenter, this.zoom)
             }
         }

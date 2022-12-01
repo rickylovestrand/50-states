@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import StateDetail from './StateDetail.vue'
+import StateDetail from './StateDetail.vue' // StateDetail is a child component of StateList
 
 export default {
     components: { StateDetail },
