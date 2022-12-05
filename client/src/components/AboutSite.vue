@@ -3,7 +3,7 @@
         <h2>Where have you traveled to?</h2>
 
         <p>Use this site to keep track of which states you travel to</p>
-        <p>A Vue.js site by Ricky</p>
+        <p>A Vue.js site by Ricky, and it's hosted at Azure!</p>
     </div>
 </template>
 

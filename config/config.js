@@ -1,3 +1,4 @@
+module.exports = 
 {
   "development": {
     "storage": "states.db",
@@ -11,10 +12,10 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "username": "ricky",
+    "password": process.env.DB_PASSWQRD,
+    "database": "fifty-states-visited-database",
+    "host": "fifty-states-visited-database-server-ricky.database.windows.net",
+    "dialect": "mssql"
   }
 }
