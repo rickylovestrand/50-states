@@ -12,13 +12,15 @@
 import PageHeader from '@/components/PageHeader.vue'
 import PageFooter from './components/PageFooter.vue'
 import StateList from './components/StateList.vue'
+import StatesVisited from './components/StatesVisited.vue'
 
 export default {
   name: 'App',
   components: {
     PageHeader,
     PageFooter,
-    StateList
+    StateList,
+    StatesVisited
   }
 }
 </script>

@@ -7,6 +7,11 @@
             <span class="nav-link">
                 <router-link to="/about">About this site</router-link>
             </span>
+            <span class="nav-link">
+                <router-link to="/myVisitedStates">My visited states</router-link>
+            </span>
+
+
         </div>
         <p>Header image by 
             <a href="https://unsplash.com/photos/gtCWBwbZNpM">@mrrrk_smith at Unsplash</a>

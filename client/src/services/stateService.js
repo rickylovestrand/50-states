@@ -18,5 +18,11 @@ export default {
         return axios.get('/api/state/' + stateName).then( response =>{
             return response.data
         })
+    }, 
+
+    getVisitedStates(){
+        return axios.get('/api/myVisitedStates/').then( response =>{
+            return response.data
+        })
     }
 }
